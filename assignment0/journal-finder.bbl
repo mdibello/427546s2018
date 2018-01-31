@@ -1,0 +1,765 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{He:2017:GPV:3151031.3144455}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b41b3f6350452bb87f918d6c5f95f6ed}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Mingming},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a778b7252835f98d1580a95f269000d5}{%
+           family={Liao},
+           familyi={L\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e401de145b408f6efb812f04ceaaf85f}{%
+           family={Sander},
+           familyi={S\bibinitperiod},
+           given={Pedro\bibnamedelima V.},
+           giveni={P\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=90fd9beea1c9006d7768540fc1fe8e40}{%
+           family={Hoppe},
+           familyi={H\bibinitperiod},
+           given={Hugues},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{99c4e4ecc8551bcd5da7f0ffd8ca5f66}
+      \strng{fullhash}{ee20c383aeb7e2d1819c32c163f904a5}
+      \strng{bibnamehash}{ee20c383aeb7e2d1819c32c163f904a5}
+      \strng{authorbibnamehash}{ee20c383aeb7e2d1819c32c163f904a5}
+      \strng{authornamehash}{99c4e4ecc8551bcd5da7f0ffd8ca5f66}
+      \strng{authorfullhash}{ee20c383aeb7e2d1819c32c163f904a5}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0730-0301}
+      \field{journaltitle}{ACM Trans. Graph.}
+      \field{month}{11}
+      \field{number}{1}
+      \field{title}{Gigapixel Panorama Video Loops}
+      \field{volume}{37}
+      \field{year}{2017}
+      \field{pages}{3:1\bibrangedash 3:15}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1145/3144455
+      \endverb
+      \verb{urlraw}
+      \verb http://doi.acm.org/10.1145/3144455
+      \endverb
+      \verb{url}
+      \verb http://doi.acm.org/10.1145/3144455
+      \endverb
+      \keyw{Video textures,cinemagraphs,video stitching}
+    \endentry
+    \entry{Chang:1996:IST:234535.234537}{article}{}
+      \name{author}{3}{}{%
+        {{hash=24627d7ebc7df2a34500c1bd02eb8020}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Meng-Chou},
+           giveni={M\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=ab20658b775a400fd543088fb85567c3}{%
+           family={Lai},
+           familyi={L\bibinitperiod},
+           given={Feipei},
+           giveni={F\bibinitperiod}}}%
+        {{hash=e47deb22a73e065b1072cc3201d68df5}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wei-Chao},
+           giveni={W\bibinithyphendelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{06fa5cd4acce35e96b6024f692a50533}
+      \strng{fullhash}{06fa5cd4acce35e96b6024f692a50533}
+      \strng{bibnamehash}{06fa5cd4acce35e96b6024f692a50533}
+      \strng{authorbibnamehash}{06fa5cd4acce35e96b6024f692a50533}
+      \strng{authornamehash}{06fa5cd4acce35e96b6024f692a50533}
+      \strng{authorfullhash}{06fa5cd4acce35e96b6024f692a50533}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0730-0301}
+      \field{journaltitle}{ACM Trans. Graph.}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{Image Shading Taking into Account Relativistic Effects}
+      \field{volume}{15}
+      \field{year}{1996}
+      \field{pages}{265\bibrangedash 300}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1145/234535.234537
+      \endverb
+      \verb{urlraw}
+      \verb http://doi.acm.org/10.1145/234535.234537
+      \endverb
+      \verb{url}
+      \verb http://doi.acm.org/10.1145/234535.234537
+      \endverb
+      \keyw{Doppler effect,Lorentz transformation,aberration of light,shading,shadow,special relativity}
+    \endentry
+    \entry{7867820}{article}{}
+      \name{author}{4}{}{%
+        {{hash=8d5b37a7c0b664bee607f98948ef9e1b}{%
+           family={Barreira},
+           familyi={B\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a29a7d073bb60cd67d3c72e95953aa6b}{%
+           family={Bessa},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=45d6bc119c9ff57287559ea4d7a26711}{%
+           family={Barbosa},
+           familyi={B\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e2b6a45595f199996af836a5a41a0d6d}{%
+           family={Magalhães},
+           familyi={M\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{30dc41a6a4b6d47244880a00f4e1c6b2}
+      \strng{fullhash}{1fc979a6290edc9d8af50a77b052a55a}
+      \strng{bibnamehash}{1fc979a6290edc9d8af50a77b052a55a}
+      \strng{authorbibnamehash}{1fc979a6290edc9d8af50a77b052a55a}
+      \strng{authornamehash}{30dc41a6a4b6d47244880a00f4e1c6b2}
+      \strng{authorfullhash}{1fc979a6290edc9d8af50a77b052a55a}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1077-2626}
+      \field{journaltitle}{IEEE Transactions on Visualization and Computer Graphics}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{A Context-Aware Method for Authentically Simulating Outdoors Shadows for Mobile Augmented Reality}
+      \field{volume}{24}
+      \field{year}{2018}
+      \field{pages}{1223\bibrangedash 1231}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/TVCG.2017.2676777
+      \endverb
+      \keyw{Cameras;Clouds;Estimation;Lighting;Meteorology;Probes;Sun;Augmented reality;context-awareness;photometric registration;shadows coherence}
+    \endentry
+    \entry{556500}{article}{}
+      \name{author}{3}{}{%
+        {{hash=3e7f11a7bab38dce68040972337a587b}{%
+           family={Cochran},
+           familyi={C\bibinitperiod},
+           given={W.\bibnamedelimi O.},
+           giveni={W\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=7dfcaa6685bf96df7a05a3f728222ec9}{%
+           family={Hart},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=0347e5c142bbc9697b72454f45e78308}{%
+           family={Flynn},
+           familyi={F\bibinitperiod},
+           given={P.\bibnamedelimi J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a55c63ab11e536dd9bf1ac38af71f6c8}
+      \strng{fullhash}{a55c63ab11e536dd9bf1ac38af71f6c8}
+      \strng{bibnamehash}{a55c63ab11e536dd9bf1ac38af71f6c8}
+      \strng{authorbibnamehash}{a55c63ab11e536dd9bf1ac38af71f6c8}
+      \strng{authornamehash}{a55c63ab11e536dd9bf1ac38af71f6c8}
+      \strng{authorfullhash}{a55c63ab11e536dd9bf1ac38af71f6c8}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1077-2626}
+      \field{journaltitle}{IEEE Transactions on Visualization and Computer Graphics}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{Fractal volume compression}
+      \field{volume}{2}
+      \field{year}{1996}
+      \field{pages}{313\bibrangedash 322}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/2945.556500
+      \endverb
+      \keyw{data compression;data visualisation;discrete cosine transforms;fractals;image classification;image coding;optimisation;vector quantisation;3D edge classification scheme;compression error;compression times;deceptive smoothing;discrete cosine transform;distracting ringing;fractal image compression;fractal volume compression;high compression rates;noise;optimization;principal component analysis;system parameters;vector quantization;volumetric data;Biomedical imaging;Data visualization;Discrete cosine transforms;Fractals;Image coding;PSNR;Principal component analysis;Senior members;Smoothing methods;Vector quantization}
+    \endentry
+    \entry{8103322}{article}{}
+      \name{author}{4}{}{%
+        {{hash=891fb5c85ba78c08c51a256b52d3260c}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           prefix={h.},
+           prefixi={h\bibinitperiod}}}%
+        {{hash=0e8f83f3a0dba50a914b9a488b005455}{%
+           family={Kwon},
+           familyi={K\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=fe833cf3c8b90f2a25970e621a2e3117}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=cbdcac168f08e6dc4c798024ea69dba3}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Y.\bibnamedelimi J.},
+           giveni={Y\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{05efcc7d6b474865c8e47f8e250db772}
+      \strng{fullhash}{b415c33bcad82f83df1781202e3f4d5e}
+      \strng{bibnamehash}{b415c33bcad82f83df1781202e3f4d5e}
+      \strng{authorbibnamehash}{b415c33bcad82f83df1781202e3f4d5e}
+      \strng{authornamehash}{05efcc7d6b474865c8e47f8e250db772}
+      \strng{authorfullhash}{b415c33bcad82f83df1781202e3f4d5e}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0272-1716}
+      \field{journaltitle}{IEEE Computer Graphics and Applications}
+      \field{month}{11}
+      \field{number}{6}
+      \field{title}{Full-Body Animation of Human Locomotion in Reduced Gravity Using Physics-Based Control}
+      \field{volume}{37}
+      \field{year}{2017}
+      \field{pages}{28\bibrangedash 39}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/MCG.2017.4031066
+      \endverb
+      \keyw{computer animation;gait analysis;nonlinear control systems;path planning;pendulums;Froude number;character model;gravitational conditions;human locomotion;motion planner;pendulum trajectory generator;physics-based control;pre-estimation model;reduced gravity;robust full-body animation;stable body animation;stride frequency;tracking;Adaptation models;Biological system modeling;Computational modeling;Gravity;Legged locomotion;Predictive models;Trajectory;3D graphics;animation;computational geometry;computer graphics;object modeling;physics-based modeling}
+    \endentry
+    \entry{544070}{article}{}
+      \name{author}{4}{}{%
+        {{hash=78f8e24a39c4482bfa761e1368758f73}{%
+           family={Risch},
+           familyi={R\bibinitperiod},
+           given={J.\bibnamedelimi S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=f66d5c4322e59ecfe95fcbf294667902}{%
+           family={May},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=dde528b63e2d49f64aa69193bb16e94e}{%
+           family={Dowson},
+           familyi={D\bibinitperiod},
+           given={S.\bibnamedelimi T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=67263da563e0a53e14fda12e8acf6919}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={J.\bibnamedelimi J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{165ee3cdffc45d275edc6f8abc5bee62}
+      \strng{fullhash}{af14936f8fd78d7f80855e6a310c093f}
+      \strng{bibnamehash}{af14936f8fd78d7f80855e6a310c093f}
+      \strng{authorbibnamehash}{af14936f8fd78d7f80855e6a310c093f}
+      \strng{authornamehash}{165ee3cdffc45d275edc6f8abc5bee62}
+      \strng{authorfullhash}{af14936f8fd78d7f80855e6a310c093f}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0272-1716}
+      \field{journaltitle}{IEEE Computer Graphics and Applications}
+      \field{month}{11}
+      \field{number}{6}
+      \field{title}{A virtual environment for multimedia intelligence data analysis}
+      \field{volume}{16}
+      \field{year}{1996}
+      \field{pages}{33\bibrangedash 41}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/38.544070
+      \endverb
+      \keyw{data analysis;data visualisation;multimedia computing;virtual reality;3D information visualization;Starlight;exploratory information visualization system;immersive interface;information-dense 3D graphical representations;multimedia data;multimedia data interrelationships;multimedia database content visualization;multimedia intelligence data analysis;production-oriented information analysis environment;virtual environment;Data analysis;Data processing;Data visualization;Displays;Information analysis;Laboratories;Multimedia databases;Streaming media;Turning;User interfaces}
+    \endentry
+    \entry{Song:2017:RIF:3130800.3130803}{article}{}
+      \name{author}{7}{}{%
+        {{hash=084a5a4ca7001b3de6f9cff059c7da9f}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4fe7b51c8f82550e031f39a080ca3572}{%
+           family={Fu},
+           familyi={F\bibinitperiod},
+           given={Chi-Wing},
+           giveni={C\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=4d1356f5cde16bc761a40e6de47fff63}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Yueming},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=5d053b932232af2ecc8e5de383d1ceee}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Hongfei},
+           giveni={H\bibinitperiod}}}%
+        {{hash=74d00a9e6045458f17d54f5b6b87fbfe}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Ligang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=0d34c36ec384cc59df4468cc1a3324b7}{%
+           family={Heng},
+           familyi={H\bibinitperiod},
+           given={Pheng-Ann},
+           giveni={P\bibinithyphendelim A\bibinitperiod}}}%
+        {{hash=cdf44d78713bc27a81394749a9d8bbdc}{%
+           family={Cohen-Or},
+           familyi={C\bibinithyphendelim O\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{2d62e81ace0eaa979af91c1bdc9deb4b}
+      \strng{fullhash}{bda776df1d8926d6734a88537186ebc0}
+      \strng{bibnamehash}{bda776df1d8926d6734a88537186ebc0}
+      \strng{authorbibnamehash}{bda776df1d8926d6734a88537186ebc0}
+      \strng{authornamehash}{2d62e81ace0eaa979af91c1bdc9deb4b}
+      \strng{authorfullhash}{bda776df1d8926d6734a88537186ebc0}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0730-0301}
+      \field{journaltitle}{ACM Trans. Graph.}
+      \field{month}{11}
+      \field{number}{6}
+      \field{title}{Reconfigurable Interlocking Furniture}
+      \field{volume}{36}
+      \field{year}{2017}
+      \field{pages}{174:1\bibrangedash 174:14}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1145/3130800.3130803
+      \endverb
+      \verb{urlraw}
+      \verb http://doi.acm.org/10.1145/3130800.3130803
+      \endverb
+      \verb{url}
+      \verb http://doi.acm.org/10.1145/3130800.3130803
+      \endverb
+      \keyw{co-analysis,computational design,dissection,furniture assembly,joints,mechanical interlocking,reconfigurable}
+    \endentry
+    \entry{Chuang:2002:VMC:566570.566572}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=508419bc8982d82ecbfde7035769523e}{%
+           family={Chuang},
+           familyi={C\bibinitperiod},
+           given={Yung-Yu},
+           giveni={Y\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=8906b2e009a62884cb11d5b96c9b7897}{%
+           family={Agarwala},
+           familyi={A\bibinitperiod},
+           given={Aseem},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7133c602cdd8e7ab92c7a3430532a3db}{%
+           family={Curless},
+           familyi={C\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=24da7924f3bd2447fbceff0b822c576b}{%
+           family={Salesin},
+           familyi={S\bibinitperiod},
+           given={David\bibnamedelima H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=f2e556c93256e7d70895d67702e14f1a}{%
+           family={Szeliski},
+           familyi={S\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {San Antonio, Texas}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{58386190049bbced1949d175f34a13c8}
+      \strng{fullhash}{35a6bb129b1802a0fa105c651c465f4b}
+      \strng{bibnamehash}{35a6bb129b1802a0fa105c651c465f4b}
+      \strng{authorbibnamehash}{35a6bb129b1802a0fa105c651c465f4b}
+      \strng{authornamehash}{58386190049bbced1949d175f34a13c8}
+      \strng{authorfullhash}{35a6bb129b1802a0fa105c651c465f4b}
+      \field{sortinit}{8}
+      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 29th Annual Conference on Computer Graphics and Interactive Techniques}
+      \field{isbn}{1-58113-521-1}
+      \field{series}{SIGGRAPH '02}
+      \field{title}{Video Matting of Complex Scenes}
+      \field{year}{2002}
+      \field{pages}{243\bibrangedash 248}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1145/566570.566572
+      \endverb
+      \verb{urlraw}
+      \verb http://doi.acm.org/10.1145/566570.566572
+      \endverb
+      \verb{url}
+      \verb http://doi.acm.org/10.1145/566570.566572
+      \endverb
+      \keyw{alpha channel,blue-screen matting,image-based rendering,layer extraction,matting and compositing,video processing}
+    \endentry
+    \entry{BESSA201835}{article}{}
+      \name{author}{4}{}{%
+        {{hash=4247328951de56719a2aa77482b3e191}{%
+           family={Bessa},
+           familyi={B\bibinitperiod},
+           given={Maximino},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b34c49bfea5f7b9fccf57c1462bd3f88}{%
+           family={Melo},
+           familyi={M\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=986f1b50bc86284f23a6bf89155ddbcf}{%
+           family={Sousa},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi Augusto},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=072719a83bffb30cc91eae7b26a03863}{%
+           family={Vasconcelos-Raposo},
+           familyi={V\bibinithyphendelim R\bibinitperiod},
+           given={JosÃ©},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{547ad9dd0408c9ef755785f596331861}
+      \strng{fullhash}{0fb6561fc510358171ad97e0d771bf9e}
+      \strng{bibnamehash}{0fb6561fc510358171ad97e0d771bf9e}
+      \strng{authorbibnamehash}{0fb6561fc510358171ad97e0d771bf9e}
+      \strng{authornamehash}{547ad9dd0408c9ef755785f596331861}
+      \strng{authorfullhash}{0fb6561fc510358171ad97e0d771bf9e}
+      \field{sortinit}{9}
+      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0097-8493}
+      \field{journaltitle}{Computers \& Graphics}
+      \field{title}{The effects of body position on Reflexive Motor Acts and the sense of presence in virtual environments}
+      \field{volume}{71}
+      \field{year}{2018}
+      \field{pages}{35\bibrangedash 41}
+      \range{pages}{7}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.cag.2017.11.003
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0097849317301863
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0097849317301863
+      \endverb
+      \keyw{Virtual reality,Body position,Multisensory,Reflexive Motor Acts,Presence}
+    \endentry
+    \entry{ZUIDERVELD1996775}{article}{}
+      \name{author}{6}{}{%
+        {{hash=0b83de3471013c2813dc69c46bfcb2c3}{%
+           family={Zuiderveld},
+           familyi={Z\bibinitperiod},
+           given={Karel\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9595db269c4436dcd08d2ffef2c11ccb}{%
+           family={Koning},
+           familyi={K\bibinitperiod},
+           given={Anton\bibnamedelima H.J.},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=c6c2e77b9e87282fe1dcedc8207f0e54}{%
+           family={Stokking},
+           familyi={S\bibinitperiod},
+           given={Rik},
+           giveni={R\bibinitperiod}}}%
+        {{hash=71c9c42ca4cef647bff315ee63c8aede}{%
+           family={Maintz},
+           familyi={M\bibinitperiod},
+           given={J.B.Antoine},
+           giveni={J\bibinitperiod}}}%
+        {{hash=23bb38536d682adf98cfca01aea759a1}{%
+           family={Appelman},
+           familyi={A\bibinitperiod},
+           given={Fred\bibnamedelima J.R.},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=f6114dc788df2605b95a64504eb9d6da}{%
+           family={Viergever},
+           familyi={V\bibinitperiod},
+           given={Max\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{0ec0bb2757b946e4e0dcbc6d10c7deff}
+      \strng{fullhash}{aa981ddfc5f404c40603357d3c670da7}
+      \strng{bibnamehash}{aa981ddfc5f404c40603357d3c670da7}
+      \strng{authorbibnamehash}{aa981ddfc5f404c40603357d3c670da7}
+      \strng{authornamehash}{0ec0bb2757b946e4e0dcbc6d10c7deff}
+      \strng{authorfullhash}{aa981ddfc5f404c40603357d3c670da7}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0097-8493}
+      \field{journaltitle}{Computers \& Graphics}
+      \field{note}{Medical Visualization}
+      \field{number}{6}
+      \field{title}{Multimodality visualization of medical volume data}
+      \field{volume}{20}
+      \field{year}{1996}
+      \field{pages}{775\bibrangedash 791}
+      \range{pages}{17}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0097-8493(96)00050-7
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0097849396000507
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0097849396000507
+      \endverb
+    \endentry
+    \entry{CGF:CGF12992}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bad95a854c74cb014162c7f455835d4a}{%
+           family={Alduán},
+           familyi={A\bibinitperiod},
+           given={Iván},
+           giveni={I\bibinitperiod}}}%
+        {{hash=c85a400b714b91cb8bef9d535704672d}{%
+           family={Tena},
+           familyi={T\bibinitperiod},
+           given={Angel},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e5ce97fee77d097821d10eab71538283}{%
+           family={Otaduy},
+           familyi={O\bibinitperiod},
+           given={Miguel\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{fdb837364c45a7c925cc251749d807c3}
+      \strng{fullhash}{fdb837364c45a7c925cc251749d807c3}
+      \strng{bibnamehash}{fdb837364c45a7c925cc251749d807c3}
+      \strng{authorbibnamehash}{fdb837364c45a7c925cc251749d807c3}
+      \strng{authornamehash}{fdb837364c45a7c925cc251749d807c3}
+      \strng{authorfullhash}{fdb837364c45a7c925cc251749d807c3}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1467-8659}
+      \field{journaltitle}{Computer Graphics Forum}
+      \field{number}{8}
+      \field{title}{DYVERSO: A Versatile Multi-Phase Position-Based Fluids Solution for VFX}
+      \field{volume}{36}
+      \field{year}{2017}
+      \field{pages}{32\bibrangedash 44}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1111/cgf.12992
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1111/cgf.12992
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1111/cgf.12992
+      \endverb
+      \keyw{fluid modelling,animation,I.3.3 [Computer Graphics]: Computational Geometry and Object Modelling- Physically based modelling}
+    \endentry
+    \entry{CGF:CGF319}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9e47369dae07290555d7bd0a8b0bfd22}{%
+           family={Desbrun},
+           familyi={D\bibinitperiod},
+           given={Mathieu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d0154891d1ada1e6f79f499e74eff0d8}{%
+           family={Tsingos},
+           familyi={T\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=a7ded539636ab55f54a5b5c44a1257ed}{%
+           family={Gascuel},
+           familyi={G\bibinitperiod},
+           given={Marie-Paule},
+           giveni={M\bibinithyphendelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Blackwell Science Ltd}%
+      }
+      \strng{namehash}{ec1f087bf7371d3af5731d0c394e7da1}
+      \strng{fullhash}{ec1f087bf7371d3af5731d0c394e7da1}
+      \strng{bibnamehash}{ec1f087bf7371d3af5731d0c394e7da1}
+      \strng{authorbibnamehash}{ec1f087bf7371d3af5731d0c394e7da1}
+      \strng{authornamehash}{ec1f087bf7371d3af5731d0c394e7da1}
+      \strng{authorfullhash}{ec1f087bf7371d3af5731d0c394e7da1}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1467-8659}
+      \field{journaltitle}{Computer Graphics Forum}
+      \field{number}{5}
+      \field{title}{Adaptive Sampling of Implicit Surfaces for Interactive Modelling and Animation}
+      \field{volume}{15}
+      \field{year}{1996}
+      \field{pages}{319\bibrangedash 325}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1111/1467-8659.1550319
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1111/1467-8659.1550319
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1111/1467-8659.1550319
+      \endverb
+      \keyw{Implicit surfaces,sampling,interactive visualization}
+    \endentry
+    \entry{VCr}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c0812479a821c218fd49c87833afb188}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Taekhee},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0721c387bcdc6cd498387cffe7d75f12}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Daeun},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8b9be97be1b679a15339737fd502002a}{%
+           family={Kwon},
+           familyi={K\bibinitperiod},
+           given={Taesoo},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5fac304aa41032b6bcc9632d6620d5e}
+      \strng{fullhash}{e5fac304aa41032b6bcc9632d6620d5e}
+      \strng{bibnamehash}{e5fac304aa41032b6bcc9632d6620d5e}
+      \strng{authorbibnamehash}{e5fac304aa41032b6bcc9632d6620d5e}
+      \strng{authornamehash}{e5fac304aa41032b6bcc9632d6620d5e}
+      \strng{authorfullhash}{e5fac304aa41032b6bcc9632d6620d5e}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1432-2315}
+      \field{journaltitle}{The Visual Computer}
+      \field{number}{1}
+      \field{title}{Motion normalization method based on an inverted pendulum model for clustering}
+      \field{volume}{34}
+      \field{year}{2018}
+      \field{pages}{29}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s00371-016-1308-y
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00371-016-1308-y
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00371-016-1308-y
+      \endverb
+      \keyw{physics-based method,motion capture and reuse,motion clustering}
+    \endentry
+    \entry{VCo}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4e86b22c39ae619117f44b50e1047858}{%
+           family={Soucy},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=81060711b872d68bdcb5194d5acbf362}{%
+           family={Godin},
+           familyi={G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=74a7eda36779757141e1ca739962680d}{%
+           family={Rioux},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{60b8a3016b032ac5bdc9b471519a8906}
+      \strng{fullhash}{60b8a3016b032ac5bdc9b471519a8906}
+      \strng{bibnamehash}{60b8a3016b032ac5bdc9b471519a8906}
+      \strng{authorbibnamehash}{60b8a3016b032ac5bdc9b471519a8906}
+      \strng{authornamehash}{60b8a3016b032ac5bdc9b471519a8906}
+      \strng{authorfullhash}{60b8a3016b032ac5bdc9b471519a8906}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1432-2315}
+      \field{journaltitle}{The Visual Computer}
+      \field{number}{10}
+      \field{title}{A texture-mapping approach for the compression of colored 3D triangulations}
+      \field{volume}{12}
+      \field{year}{1996}
+      \field{pages}{503}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s003710050082
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s003710050082
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s003710050082
+      \endverb
+      \keyw{triangulation,geometric compression,texture mapping,multiresolution,color digitizing}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,20 @@
+[0] Config.pm:302> INFO - This is Biber 2.10
+[0] Config.pm:305> INFO - Logfile is 'journal-finder.blg'
+[40] biber:313> INFO - === Wed Jan 31, 2018, 16:12:57
+[68] Biber.pm:371> INFO - Reading 'journal-finder.bcf'
+[173] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[190] Biber.pm:3976> INFO - Processing section 0
+[205] Biber.pm:4136> INFO - Looking for bibtex format file 'journal-finder.bib' for section 0
+[208] bibtex.pm:1490> INFO - LaTeX decoding ...
+[260] bibtex.pm:1306> INFO - Found BibTeX data source 'journal-finder.bib'
+[275] Utils.pm:193> WARN - month field 'Nov' in entry '544070' is not an integer - this will probably not sort properly.
+[294] Utils.pm:193> WARN - month field 'Dec' in entry '556500' is not an integer - this will probably not sort properly.
+[330] Utils.pm:193> WARN - month field 'March' in entry '7867820' is not an integer - this will probably not sort properly.
+[359] Utils.pm:193> WARN - month field 'November' in entry '8103322' is not an integer - this will probably not sort properly.
+[465] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[465] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[465] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[465] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[486] bbl.pm:617> INFO - Writing 'journal-finder.bbl' with encoding 'UTF-8'
+[500] bbl.pm:720> INFO - Output to journal-finder.bbl
+[501] Biber.pm:110> INFO - WARNINGS: 4

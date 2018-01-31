@@ -1,0 +1,5 @@
+[0] Config.pm:302> INFO - This is Biber 2.10
+[0] Config.pm:305> INFO - Logfile is 'journal-finder.bib.blg'
+[37] biber:313> INFO - === Wed Jan 31, 2018, 16:06:52
+[120] Utils.pm:209> ERROR - Cannot find control file 'journal-finder.bib.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
+[121] Biber.pm:114> INFO - ERRORS: 1

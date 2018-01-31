@@ -1,0 +1,31 @@
+\documentclass[11pt]{article}
+\usepackage[]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ragged2e}
+\usepackage[autostyle]{csquotes}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{indentfirst}
+\usepackage[backend=biber,style=ieee]{biblatex}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{amsmath}
+\usepackage[section]{placeins}
+\usepackage{float}
+\DeclareLanguageMapping{english}{english-apa}
+\usepackage{filecontents}
+\linespread{1.0}
+\addbibresource{journal-finder.bib}
+
+\title{Journal Finder\vspace{-2ex}}
+\author{Matthew DiBello\vspace{-2ex}}
+\date{January 31, 2018\vspace{-2ex}}
+
+\begin{document}
+\maketitle
+
+\nocite{*}
+
+\printbibliography
+\end{document}
