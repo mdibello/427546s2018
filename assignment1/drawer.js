@@ -1,6 +1,6 @@
-window.onload = function() {
+function draw(view, positions) {
   // select canvas
-  const canvas = document.getElementById("canvas-line");
+  const canvas = document.getElementById("canvas-" + view);
 
   // make sure webgl initializes correctly
   try {
@@ -46,14 +46,14 @@ window.onload = function() {
 
   // Now create an array of positions for the square.
   positions = [
-    0.02, 0.02,
-    0.00, 0.02,
-    0.02, 0.00,
+    0.01, 0.01,
+    0.00, 0.01,
+    0.01, 0.00,
     0.00, 0.00,
-    2.02, 2.02,
-    2.00, 2.02,
-    2.02, 2.00,
-    2.00, 2.00,
+    0.00, 0.00,
+    -0.01, 0.00,
+    0.00, -0.01,
+    -0.01, -0.01,
   ];
   buffers = initBuffers(gl, positions);
 
@@ -146,7 +146,7 @@ function drawScene(gl, programInfo, buffers) {
   // ratio that matches the display size of the canvas
   // and we only want to see objects between 0.1 units
   // and 100 units away from the camera.
-  const fieldOfView = 45 * Math.PI / 180;   // in radians
+  const fieldOfView = 90 * Math.PI / 180;   // in radians
   const aspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
   const zNear = 0.1;
   const zFar = 100.0;
@@ -168,7 +168,7 @@ function drawScene(gl, programInfo, buffers) {
   // start drawing the square.
   mat4.translate(modelViewMatrix,     // destination matrix
                  modelViewMatrix,     // matrix to translate
-                 [-0.0, 0.0, -6.0]);  // amount to translate
+                 [-0.0, 0.0, -1.0]);  // amount to translate
 
   // Tell WebGL how to pull out the positions from the position
   // buffer into the vertexPosition attribute.

@@ -1,35 +1,38 @@
+<!DOCTYPE HTML>
 <html>
   <head>
     <title>Matthew DiBello's Assignment 1</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script type="text/javascript" src="./drawer.js"></script>
     <script type="text/javascript" src="./gl-matrix.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./drawer.js"></script>
+    <script type="text/javascript" src="./eventHandler.js"></script>
   </head>
 
   <body>
 
     <ul class="nav nav-tabs">
+      <a class="navbar-brand" href="#">Matthew DiBello 	//</a>
       <li class="nav-item">
-        <a class="nav-link active" href="#!">Line</a>
+        <a class="nav-link active" id="tab-line" href="#">Line</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#!">Circle</a>
+        <a class="nav-link" id="tab-circle" href="#">Circle</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#!">Ellipse</a>
+        <a class="nav-link" id="tab-ellipse" href="#">Ellipse</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#!">Rectangle</a>
+        <a class="nav-link" id="tab-rect" href="#">Rectangle</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#!">Polygon</a>
+        <a class="nav-link" id="tab-polygon" href="#">Polygon</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#!">Polyline</a>
+        <a class="nav-link" id="tab-polyline" href="#">Polyline</a>
       </li>
     </ul>
 
@@ -41,6 +44,24 @@
               <canvas id="canvas-line" width="640" height="480"></canvas>
             </td>
             <td>
+              <h3>Line</h3>
+              <p>To draw a line, click on any two points on the canvas.</p>
+              <button type="button" class="btn btn-primary">Clear Canvas</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="div-circle" class="hidden" >
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>
+              <canvas id="canvas-circle" width="640" height="480"></canvas>
+            </td>
+            <td>
+              circle<br/>
               Here are some nice instructions.
               And a button.
             </td>
@@ -48,20 +69,73 @@
         </tbody>
       </table>
     </div>
-    <div id="div-circle">
-      <canvas id="canvas-circle" class="hidden" width="640" height="480"></canvas>
+
+    <div id="div-ellipse" class="hidden" >
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>
+              <canvas id="canvas-ellipse" width="640" height="480"></canvas>
+            </td>
+            <td>
+              ellipse<br/>
+              Here are some nice instructions.
+              And a button.
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div id="div-ellipse">
-      <canvas id="canvas-ellipse" class="hidden" width="640" height="480"></canvas>
+
+    <div id="div-rect" class="hidden" >
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>
+              <canvas id="canvas-rect" width="640" height="480"></canvas>
+            </td>
+            <td>
+              rect<br/>
+              Here are some nice instructions.
+              And a button.
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div id="div-rect">
-      <canvas id="canvas-rect" class="hidden" width="640" height="480"></canvas>
+
+    <div id="div-polygon" class="hidden" >
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>
+              <canvas id="canvas-polygon" width="640" height="480"></canvas>
+            </td>
+            <td>
+              polygon<br/>
+              Here are some nice instructions.
+              And a button.
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div id="div-polygon">
-      <canvas id="canvas-polygon" class="hidden" width="640" height="480"></canvas>
-    </div>
-    <div id="div-polyline">
-      <canvas id="canvas-polyline" class="hidden" width="640" height="480"></canvas>
+
+    <div id="div-polyline" class="hidden" >
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>
+              <canvas id="canvas-polyline" width="640" height="480"></canvas>
+            </td>
+            <td>
+              polyline<br/>
+              Here are some nice instructions.
+              And a button.
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
   </body>

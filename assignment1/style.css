@@ -2,6 +2,10 @@
     display: none;
 }
 
+.navbar-brand {
+    margin-left: 10px;
+}
+
 canvas {
     border: 2px solid black;
 }
