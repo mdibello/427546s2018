@@ -45,21 +45,49 @@ window.onload = function() {
     }
   }
 
-  document.getElementById('canvas-' + currentView).onclick = function(event) {
-    var rect = this.getBoundingClientRect();
-    var x = event.clientX - rect.left;
-    var y = event.clientY - rect.top;
+  function addCurrentPoint(elmt, evnt) {
+    var rect = elmt.getBoundingClientRect();
+    var x = evnt.clientX - rect.left;
+    var y = evnt.clientY - rect.top;
     currentPoints = currentPoints.concat(pixelsToCoord([x, y]));
-    if (currentView.localeCompare('line') == 0 && currentPoints.length == 16) {
+  }
+
+  document.getElementById('canvas-line').onclick = function(event) {
+    addCurrentPoint(this, event);
+    if (currentPoints.length == 16) {
       constructLine();
     }
-    else if (currentView.localeCompare('circle') == 0 && currentPoints.length == 16) {
+    else {
+      console.log(currentPoints);
+      draw(currentView, currentPoints);
+    }
+  }
+
+  document.getElementById('canvas-circle').onclick = function(event) {
+    addCurrentPoint(this, event);
+    if (currentPoints.length == 16) {
       constructCircle();
     }
-    else if (currentView.localeCompare('ellipse') == 0 && currentPoints.length == 24) {
+    else {
+      console.log(currentPoints);
+      draw(currentView, currentPoints);
+    }
+  }
+
+  document.getElementById('canvas-ellipse').onclick = function(event) {
+    addCurrentPoint(this, event);
+    if (currentPoints.length == 24) {
       constructEllipse();
     }
-    else if (currentView.localeCompare('rect') == 0 && currentPoints.length == 16) {
+    else {
+      console.log(currentPoints);
+      draw(currentView, currentPoints);
+    }
+  }
+
+  document.getElementById('canvas-rect').onclick = function(event) {
+    addCurrentPoint(this, event);
+    if (currentPoints.length == 16) {
       constructRect();
     }
     else {
@@ -68,14 +96,25 @@ window.onload = function() {
     }
   }
 
-  function constructLine() {
-    // Build a line
+  document.getElementById('canvas-polygon').onclick = function(event) {
+    addCurrentPoint(this, event);
+    console.log(currentPoints);
+    draw(currentView, currentPoints);
   }
 
-  $('#clear').click(function() {
-    currentPoints = [];
+  document.getElementById('canvas-polyline').onclick = function(event) {
+    addCurrentPoint(this, event);
+    console.log(currentPoints);
     draw(currentView, currentPoints);
-  })
+  }
+
+  var clears = document.querySelectorAll('#clear');
+  for (var i = 0; i < clears.length; i++) {
+    clears[i].onclick = function() {
+      currentPoints = [];
+      draw(currentView, currentPoints);
+    }
+  }
 
   $('#tab-line').click(function() {
     switchTo('line');
