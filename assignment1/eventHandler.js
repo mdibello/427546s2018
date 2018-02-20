@@ -52,10 +52,12 @@ window.onload = function() {
     }
     var m = (pt2[1] - points[1]) / (pt2[0] - points[0]);
     var b = pt2[1] - (m * pt2[0]);
+    var actualPoint = (m * points[0]) + b;
+    var inc = (m * 0.01);
     for (var i = points[0]; i < pt2[0]; i+=0.01) {
       points.push(i);
       points.push(points[points.length - 2]);
-      var actualPoint = (m * i) + b;
+      actualPoint += inc;
       if (Math.abs(actualPoint - points[points.length - 1]) >
           Math.abs(actualPoint - (points[points.length - 1] + 0.01))) {
             points[points.length - 1] += 0.01;
