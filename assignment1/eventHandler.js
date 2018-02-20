@@ -30,11 +30,13 @@ window.onload = function() {
   }
 
   function switchTo(view) {
+    currentPoints = [];
+    currentView = view;
     for (var i = 0; i < views.length; i++) {
       if (view.localeCompare(views[i]) == 0) {
         document.getElementById('tab-' + views[i]).classList.add('active');
         document.getElementById('div-' + views[i]).style['display'] = 'inline-block';
-        draw(view, []);
+        draw(view, currentPoints);
       }
       else {
         document.getElementById('tab-' + views[i]).classList.remove('active');
@@ -47,18 +49,17 @@ window.onload = function() {
     var rect = this.getBoundingClientRect();
     var x = event.clientX - rect.left;
     var y = event.clientY - rect.top;
-    alert(x + ", " + y);
     currentPoints = currentPoints.concat(pixelsToCoord([x, y]));
-    if (currentView.localeCompare('line') == 0 && currentPoints.length == 2) {
+    if (currentView.localeCompare('line') == 0 && currentPoints.length == 16) {
       constructLine();
     }
-    else if (currentView.localeCompare('circle') == 0 && currentPoints.length == 2) {
+    else if (currentView.localeCompare('circle') == 0 && currentPoints.length == 16) {
       constructCircle();
     }
-    else if (currentView.localeCompare('ellipse') == 0 && currentPoints.length == 3) {
+    else if (currentView.localeCompare('ellipse') == 0 && currentPoints.length == 24) {
       constructEllipse();
     }
-    else if (currentView.localeCompare('rect') == 0 && currentPoints.length == 2) {
+    else if (currentView.localeCompare('rect') == 0 && currentPoints.length == 16) {
       constructRect();
     }
     else {
@@ -68,8 +69,13 @@ window.onload = function() {
   }
 
   function constructLine() {
-    //
+    // Build a line
   }
+
+  $('#clear').click(function() {
+    currentPoints = [];
+    draw(currentView, currentPoints);
+  })
 
   $('#tab-line').click(function() {
     switchTo('line');
