@@ -44,20 +44,9 @@ function draw(view, positions) {
     },
   };
 
-  // Now create an array of positions for the square.
-  positions = [
-    0.01, 0.01,
-    0.00, 0.01,
-    0.01, 0.00,
-    0.00, 0.00,
-    0.00, 0.00,
-    -0.01, 0.00,
-    0.00, -0.01,
-    -0.01, -0.01,
-  ];
   buffers = initBuffers(gl, positions);
 
-  drawScene(gl, programInfo, buffers); 
+  drawScene(gl, programInfo, buffers, (positions.length / 8)); 
 }
 
 //
@@ -131,7 +120,7 @@ function initBuffers(gl, positions) {
   };
 }
 
-function drawScene(gl, programInfo, buffers) {
+function drawScene(gl, programInfo, buffers, numPixels) {
   gl.clearColor(255.0, 255.0, 255.0, 1.0);  // Clear to white, fully opaque
   gl.clearDepth(1.0);                       // Clear everything
   gl.enable(gl.DEPTH_TEST);                 // Enable depth testing
@@ -207,7 +196,8 @@ function drawScene(gl, programInfo, buffers) {
   {
     const offset = 0;
     const vertexCount = 4;
-    gl.drawArrays(gl.TRIANGLE_STRIP, offset, vertexCount);
-    gl.drawArrays(gl.TRIANGLE_STRIP, offset + 4, vertexCount);
+    for (var i = 0; i < numPixels; i++) {
+        gl.drawArrays(gl.TRIANGLE_STRIP, offset + (i * 4), vertexCount);
+    }
   }
 }

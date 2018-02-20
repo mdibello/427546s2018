@@ -1,23 +1,32 @@
 window.onload = function() {
-  canvasWidth  = Math.trunc($(window).width() * (2.0/3.0));
-  canvasHeight = Math.trunc($(window).height() * (2.0/3.0));
-
   views = ['line', 'circle', 'ellipse', 'rect', 'polygon', 'polyline'];
   currentPoints = [];
   currentView = 'line';
 
-  switchTo('line');
+  canvas = document.getElementById('canvas-' + currentView);
+  canvasWidth  = canvas.getAttribute('width');
+  canvasHeight = canvas.getAttribute('height');
 
-  // for (var i = 0; i < views.length; i++) {
-  //   var canvas = document.getElementById('canvas-' + views[i]);
-  //   canvas.setAttribute('width',  canvasWidth);
-  //   canvas.setAttribute('height', canvasHeight);
-  // }
+  switchTo(currentView);
 
   pixelsPerCoord = Math.min(canvasWidth, canvasHeight) / 2;
+
   function pixelsToCoord(c) {
-    return [(c[0] - (canvasWidth/2))  / pixelsPerCoord,
-            ((canvasHeight/2) - c[1]) / pixelsPerCoord];
+    if (c[0] > (canvasWidth/2)) {
+      x = (c[0] % (canvasWidth/2.0)) / pixelsPerCoord;
+    }
+    else {
+      x = ((c[0] % (canvasWidth/2.0)) / pixelsPerCoord) + (-1 * (canvasWidth/2) / pixelsPerCoord);
+    }
+    if (c[1] > (canvasHeight/2.0)) {
+      y = (c[1] % (canvasHeight/2.0)) / (-1 * pixelsPerCoord);
+    }
+    else {
+      y = ((canvasHeight/2.0) - c[1]) / pixelsPerCoord;
+    }
+    x1 = x + 0.01;
+    y1 = y + 0.01;
+    return [x1, y1, x, y1, x1, y, x, y];
   }
 
   function switchTo(view) {
@@ -25,7 +34,7 @@ window.onload = function() {
       if (view.localeCompare(views[i]) == 0) {
         document.getElementById('tab-' + views[i]).classList.add('active');
         document.getElementById('div-' + views[i]).style['display'] = 'inline-block';
-        draw(view);
+        draw(view, []);
       }
       else {
         document.getElementById('tab-' + views[i]).classList.remove('active');
@@ -38,7 +47,8 @@ window.onload = function() {
     var rect = this.getBoundingClientRect();
     var x = event.clientX - rect.left;
     var y = event.clientY - rect.top;
-    currentPoints.push(pixelsToCoord([x, y]));
+    alert(x + ", " + y);
+    currentPoints = currentPoints.concat(pixelsToCoord([x, y]));
     if (currentView.localeCompare('line') == 0 && currentPoints.length == 2) {
       constructLine();
     }
@@ -52,10 +62,9 @@ window.onload = function() {
       constructRect();
     }
     else {
-      // draw all current points
+      console.log(currentPoints);
+      draw(currentView, currentPoints);
     }
-    //alert("x: " + x + " y: " + y);
-    //alert(pixelsToCoord([x,y]));
   }
 
   function constructLine() {
