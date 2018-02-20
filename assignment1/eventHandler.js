@@ -78,7 +78,6 @@ window.onload = function() {
     return positions;
   }
       
-
   function constructLine() {
     var x1 = currentPoints[2];
     var y1 = currentPoints[5];
@@ -118,6 +117,24 @@ window.onload = function() {
         }
       }
     }
+    positions = pixelize(points);
+    currentPoints = [];
+    draw(currentView, positions);
+  }
+
+  function constructRect() {
+    var x1 = currentPoints[2];
+    var y1 = currentPoints[5];
+    var x2 = currentPoints[10];
+    var y2 = currentPoints[13];
+    var points = [];
+    points = points.concat(linearGeneration([y1, x1], [y2, x1]));
+    points = points.concat(linearGeneration([y2, x2], [y1, x2]));
+    for (var i = 0; i < points.length; i+=2) {
+      [points[i], points[i+1]] = [points[i+1], points[i]];
+    }
+    points = points.concat(linearGeneration([x1, y2], [x2, y2]));
+    points = points.concat(linearGeneration([x2, y1], [x1, y1]));
     positions = pixelize(points);
     currentPoints = [];
     draw(currentView, positions);
