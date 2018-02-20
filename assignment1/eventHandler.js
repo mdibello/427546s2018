@@ -45,6 +45,10 @@ window.onload = function() {
     }
   }
 
+  function constructLine() {
+    
+  }
+
   function addCurrentPoint(elmt, evnt) {
     var rect = elmt.getBoundingClientRect();
     var x = evnt.clientX - rect.left;
@@ -141,4 +145,3 @@ window.onload = function() {
     return false;
   })
 }
-
