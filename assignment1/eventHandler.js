@@ -45,8 +45,82 @@ window.onload = function() {
     }
   }
 
+  function linearGeneration(points, pt2) {
+    if (pt2[0] < points[0]) {
+      [points[0], pt2[0]] = [pt2[0], points[0]];
+      [points[1], pt2[1]] = [pt2[1], points[1]];
+    }
+    var m = (pt2[1] - points[1]) / (pt2[0] - points[0]);
+    var b = pt2[1] - (m * pt2[0]);
+    for (var i = points[0]; i < pt2[0]; i+=0.01) {
+      points.push(i);
+      points.push(points[points.length - 2]);
+      var actualPoint = (m * i) + b;
+      if (Math.abs(actualPoint - points[points.length - 1]) >
+          Math.abs(actualPoint - (points[points.length - 1] + 0.01))) {
+            points[points.length - 1] += 0.01;
+      }
+    }
+    points.push(pt2[0]);
+    points.push(pt2[1]);
+    return points;
+  }
+
+  function pixelize(points) {
+    positions = [];
+    for (var i = 0; i < points.length; i+=2) {
+      x = points[i];
+      y = points[i+1];
+      x1 = x + 0.01;
+      y1 = y + 0.01;
+      positions = positions.concat([x1, y1, x, y1, x1, y, x, y]);
+    }
+    return positions;
+  }
+      
+
   function constructLine() {
-    
+    var x1 = currentPoints[2];
+    var y1 = currentPoints[5];
+    var x2 = currentPoints[10];
+    var y2 = currentPoints[13];
+    var m = (y2 - y1) / (x2 - x1);
+    var b = y2 - (m * x2);
+    var points = [];
+    if (m > 0) {
+      if (m > 1) {
+        [x1, y1] = [y1, x1];
+        [x2, y2] = [y2, x2];
+        points = linearGeneration([x1, y1], [x2, y2]);
+        for (var i = 0; i < points.length; i+=2) {
+          [points[i], points[i+1]] = [points[i+1], points[i]];
+        }
+      }
+      else {
+        points = linearGeneration([x1, y1], [x2, y2]);
+      }
+    }
+    else {
+      if (m < -1) {
+        [x1, y1] = [-y1, x1];
+        [x2, y2] = [-y2, x2];
+        points = linearGeneration([x1, y1], [x2, y2]);
+        for (var i = 0; i < points.length; i+=2) {
+          [points[i], points[i+1]] = [points[i+1], -points[i]];
+        }
+      }
+      else {
+        [x1, y1] = [-x1, y1];
+        [x2, y2] = [-x2, y2];
+        points = linearGeneration([x1, y1], [x2, y2]);
+        for (var i = 0; i < points.length; i+=2) {
+          points[i] *= -1;
+        }
+      }
+    }
+    positions = pixelize(points);
+    currentPoints = [];
+    draw(currentView, positions);
   }
 
   function addCurrentPoint(elmt, evnt) {
@@ -62,7 +136,6 @@ window.onload = function() {
       constructLine();
     }
     else {
-      console.log(currentPoints);
       draw(currentView, currentPoints);
     }
   }
@@ -73,7 +146,6 @@ window.onload = function() {
       constructCircle();
     }
     else {
-      console.log(currentPoints);
       draw(currentView, currentPoints);
     }
   }
@@ -84,7 +156,6 @@ window.onload = function() {
       constructEllipse();
     }
     else {
-      console.log(currentPoints);
       draw(currentView, currentPoints);
     }
   }
@@ -95,20 +166,17 @@ window.onload = function() {
       constructRect();
     }
     else {
-      console.log(currentPoints);
       draw(currentView, currentPoints);
     }
   }
 
   document.getElementById('canvas-polygon').onclick = function(event) {
     addCurrentPoint(this, event);
-    console.log(currentPoints);
     draw(currentView, currentPoints);
   }
 
   document.getElementById('canvas-polyline').onclick = function(event) {
     addCurrentPoint(this, event);
-    console.log(currentPoints);
     draw(currentView, currentPoints);
   }
 
