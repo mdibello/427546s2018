@@ -133,26 +133,30 @@ window.onload = function() {
     var cy = currentPoints[5];
     var x1 = currentPoints[10];
     var y1 = currentPoints[13];
-    var radius = Math.sqrt(Math.pow((cx-x1), 2) + Math.pow((cy-y1), 2));
+    var radius = Math.sqrt(Math.pow(cx - x1, 2) + Math.pow(cy - y1, 2));
     var r_2 = Math.pow(radius, 2);
-    var xmax = cx + (radius / Math.SQRT2);
+    var xmax = (radius / Math.SQRT2) + 0.01;
     var points = [];
-    for (var x = cx; x < xmax; x+=0.01) {
-      y = cy + Math.sqrt(r_2 - Math.pow(x - cx, 2));
-      points.push(x);
-      points.push(y);
+    points.push(0);
+    points.push(radius);
+    for (var x = 0; x <= xmax; x+=0.01) {
+      y = Math.sqrt(r_2 - Math.pow(x, 2));
       points.push(x);
       points.push(points[points.length - 2]);
       if (Math.abs(y - points[points.length - 1]) >
         Math.abs(y - (points[points.length - 1] - 0.01))) {
           points[points.length - 1] -= 0.01;
       }
-      //points = points.concat([x,y, y,x, y,-x, x,-y, -x,-y, -y,-x, -y,x, -x,-y]);
     }
     var num_points = points.length;
     for (var i = 0; i < num_points; i+=2) {
-      points.push(points[i+1]);
-      points.push(points[i]);
+      x = points[i];
+      y = points[i+1];
+      points = points.concat([y,x, y,-x, x,-y, -x,-y, -y,-x, -y,x, -x,y]);
+    }
+    for (var i = 0; i < points.length; i+=2) {
+      points[i] += cx;
+      points[i+1] += cy;
     }
     positions = pixelize(points);
     currentPoints = [];
