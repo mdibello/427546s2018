@@ -163,6 +163,63 @@ window.onload = function() {
     draw(currentView, positions);
   }
 
+  function constructEllipse() {
+    var f1x = currentPoints[2];
+    var f1y = currentPoints[5];
+    var f2x = currentPoints[10];
+    var f2y = currentPoints[13];
+    var c1x = currentPoints[18];
+    var c1y = currentPoints[21];
+    var r = Math.sqrt(Math.pow(c1x-f1x, 2) + Math.pow(c1y-f1y, 2)) +
+            Math.sqrt(Math.pow(c1x-f2x, 2) + Math.pow(c1y-f2y, 2));
+    var d = Math.sqrt(Math.pow(f2x-f1x, 2) + Math.pow(f2y-f1y, 2));
+    var rx = (d/2.0) + ((r - (d/2.0)) / 2);
+    var ry = Math.sqrt(Math.pow(r/2.0, 2) - Math.pow(d/2.0, 2));
+    console.log("r: " + r);
+    console.log("d: " + d);
+    console.log("rx: " + rx);
+    console.log("ry: " + ry);
+    var points = [];
+    var x = 0;
+    var y = ry;
+    var prevY = ry;
+    points.push(x);
+    points.push(y);
+    for (x = 0; x <= d/2; x+=0.01) {
+      y = Math.sqrt(ry - ((ry/rx)*Math.pow(x, 2)));
+      //if (prevY - y > 0.01) {
+      //  console.log("Found the point");
+      //  break;
+      //}
+      points.push(x);
+      //points.push(y);
+      points.push(points[points.length - 2]);
+      if (Math.abs(y - points[points.length - 1]) >
+        Math.abs(y - (points[points.length - 1] - 0.01))) {
+          points[points.length - 1] -= 0.01;
+      }
+    }
+    for (y; y >= 0; y-=0.01) {
+      x = Math.sqrt(rx - ((rx/ry)*Math.pow(y, 2)));
+      points.push(y);
+      points.push(points[points.length - 2]);
+      if (Math.abs(x - points[points.length - 1]) >
+        Math.abs(x - (points[points.length - 1] - 0.01))) {
+          points[points.length - 1] -= 0.01;
+      }
+    }
+    var num_points = points.length;
+    for (var i = 0; i < num_points; i+=2) {
+      x = points[i];
+      y = points[i+1];
+      points = points.concat([x,-y, -x,y, -x,-y]);
+    }
+    points = points.concat([f1x,f1y, f2x, f2y]);
+    positions = pixelize(points);
+    currentPoints = [];
+    draw(currentView, positions);
+  }
+
   function constructRect() {
     var x1 = currentPoints[2];
     var y1 = currentPoints[5];
