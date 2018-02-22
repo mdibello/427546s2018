@@ -175,10 +175,8 @@ window.onload = function() {
     var d = Math.sqrt(Math.pow(f2x-f1x, 2) + Math.pow(f2y-f1y, 2));
     var rx = (d/2.0) + ((r - (d/2.0)) / 2);
     var ry = Math.sqrt(Math.pow(r/2.0, 2) - Math.pow(d/2.0, 2));
-    //console.log("r: " + r);
-    //console.log("d: " + d);
-    //console.log("rx: " + rx);
-    //console.log("ry: " + ry);
+    var centerX = (f1x + f2x) / 2;
+    var centerY = (f1y + f2y) / 2;
     var points = [];
     var x = 0;
     var y = ry;
@@ -192,7 +190,6 @@ window.onload = function() {
       }
       prevY = y;
       points.push(x);
-      //points.push(y);
       points.push(points[points.length - 2]);
       if (Math.abs(y - points[points.length - 1]) >
         Math.abs(y - (points[points.length - 1] - 0.01))) {
@@ -202,7 +199,6 @@ window.onload = function() {
     for (y; y >= 0; y-=0.01) {
       x = Math.sqrt(Math.pow(rx, 2) - ((Math.pow(rx, 2)/Math.pow(ry, 2))*Math.pow(y, 2)));
       points.push(points[points.length - 2]);
-      //console.log(y + ": " + x + " vs " + points[points.length-1]);
       points.push(y);
       if (Math.abs(x - points[points.length - 2]) >
         Math.abs(x - (points[points.length - 2] + 0.01))) {
@@ -215,7 +211,16 @@ window.onload = function() {
       y = points[i+1];
       points = points.concat([x,-y, -x,y, -x,-y]);
     }
-    points = points.concat([f1x,f1y, f2x, f2y]);
+    var angle = Math.acos(Math.abs(f1x-centerX)/(d/2.0));
+    if (f1x > f2x && f1y < f2y || f2x > f1x && f2y < f1y) {
+      angle += Math.PI;
+    }
+    for (var i = 0; i < points.length; i+=2) {
+      points[i] = (points[i] * Math.cos(angle)) - (points[i+1] * Math.sin(angle));
+      points[i+1] = (points[i] * Math.sin(angle)) + (points[i+1] * Math.cos(angle));
+      points[i] += centerX;
+      points[i+1] += centerY;
+    }
     positions = pixelize(points);
     currentPoints = [];
     draw(currentView, positions);
