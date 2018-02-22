@@ -175,22 +175,22 @@ window.onload = function() {
     var d = Math.sqrt(Math.pow(f2x-f1x, 2) + Math.pow(f2y-f1y, 2));
     var rx = (d/2.0) + ((r - (d/2.0)) / 2);
     var ry = Math.sqrt(Math.pow(r/2.0, 2) - Math.pow(d/2.0, 2));
-    console.log("r: " + r);
-    console.log("d: " + d);
-    console.log("rx: " + rx);
-    console.log("ry: " + ry);
+    //console.log("r: " + r);
+    //console.log("d: " + d);
+    //console.log("rx: " + rx);
+    //console.log("ry: " + ry);
     var points = [];
     var x = 0;
     var y = ry;
     var prevY = ry;
     points.push(x);
     points.push(y);
-    for (x = 0; x <= d/2; x+=0.01) {
-      y = Math.sqrt(ry - ((ry/rx)*Math.pow(x, 2)));
-      //if (prevY - y > 0.01) {
-      //  console.log("Found the point");
-      //  break;
-      //}
+    for (x = 0; x < rx; x+=0.01) {
+      y = Math.sqrt(Math.pow(ry, 2) - ((Math.pow(ry, 2)/Math.pow(rx, 2))*Math.pow(x, 2)));
+      if (prevY - y > 0.01) {
+        break;
+      }
+      prevY = y;
       points.push(x);
       //points.push(y);
       points.push(points[points.length - 2]);
@@ -200,12 +200,13 @@ window.onload = function() {
       }
     }
     for (y; y >= 0; y-=0.01) {
-      x = Math.sqrt(rx - ((rx/ry)*Math.pow(y, 2)));
-      points.push(y);
+      x = Math.sqrt(Math.pow(rx, 2) - ((Math.pow(rx, 2)/Math.pow(ry, 2))*Math.pow(y, 2)));
       points.push(points[points.length - 2]);
-      if (Math.abs(x - points[points.length - 1]) >
-        Math.abs(x - (points[points.length - 1] - 0.01))) {
-          points[points.length - 1] -= 0.01;
+      //console.log(y + ": " + x + " vs " + points[points.length-1]);
+      points.push(y);
+      if (Math.abs(x - points[points.length - 2]) >
+        Math.abs(x - (points[points.length - 2] + 0.01))) {
+          points[points.length - 2] += 0.01;
       }
     }
     var num_points = points.length;
